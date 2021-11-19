@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="235.0" style="-fx-background-color: #46423d;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Label fx:id="label_field" alignment="CENTER_RIGHT" layoutX="5.0" prefHeight="64.0" prefWidth="223.0" style="-fx-background-color: #46423d;" text="0" textFill="#bcbbbb" AnchorPane.bottomAnchor="236.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font name="Calibri Light Italic" size="40.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="21.0" layoutY="196.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="60.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Button fx:id="but_clear" mnemonicParsing="false" prefHeight="48.0" prefWidth="58.75" style="-fx-background-color: #565351; -fx-border-color: #47423f;" styleClass="btn" stylesheets="@../styles/main.css" text="AC" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Light Italic" size="20.0" />
+               </font></Button>
+            <Button fx:id="but_plus_minus" mnemonicParsing="false" prefHeight="48.0" prefWidth="58.75" style="-fx-background-color: #565351; -fx-border-color: #47423f;" styleClass="btn" stylesheets="@../styles/main.css" text="+/-" textFill="WHITE" GridPane.columnIndex="1">
+               <font>
+                  <Font name="Calibri Light Italic" size="20.0" />
+               </font></Button>
+            <Button fx:id="but_percent" mnemonicParsing="false" prefHeight="48.0" prefWidth="58.75" style="-fx-background-color: #565351; -fx-border-color: #47423f;" styleClass="btn" stylesheets="@../styles/main.css" text="\%" textFill="WHITE" GridPane.columnIndex="2">
+               <font>
+                  <Font name="Calibri Light Italic" size="20.0" />
+               </font></Button>
+            <Button fx:id="but_del" mnemonicParsing="false" prefHeight="48.0" prefWidth="58.75" style="-fx-background-color: f2a23c; -fx-border-color: #47423f;" styleClass="btn" stylesheets="@../styles/main.css" text="/" textFill="WHITE" GridPane.columnIndex="3">
+               <font>
+                  <Font name="Calibri Light Italic" size="20.0" />
+               </font></Button>
+            <Button fx:id="but_7" mnemonicParsing="false" prefHeight="48.0" prefWidth="58.75" style="-fx-background-color: #72706d; -fx-border-color: #47423f;" styleClass="btn" stylesheets="@../styles/main.css" text="7" textFill="WHITE" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Calibri Light Italic" size="20.0" />
+               </font></Button>
+            <Button fx:id="but_8" mnemonicParsing="false" prefHeight="48.0" prefWidth="58.75" style="-fx-background-color: #72706d; -fx-border-color: #47423f;" styleClass="btn" stylesheets="@../styles/main.css" text="8" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Calibri Light Italic" size="20.0" />
+               </font></Button>
+            <Button fx:id="but_9" mnemonicParsing="false" prefHeight="48.0" prefWidth="58.75" style="-fx-background-color: #72706d; -fx-border-color: #47423f;" styleClass="btn" stylesheets="@../styles/main.css" text="9" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Calibri Light Italic" size="20.0" />
+               </font></Button>
+            <Button fx:id="but_mult" mnemonicParsing="false" prefHeight="48.0" prefWidth="58.75" style="-fx-background-color: f2a23c; -fx-border-color: #47423f;" styleClass="btn" stylesheets="@../styles/main.css" text="x" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Calibri Light Italic" size="20.0" />
+               </font></Button>
+            <Button fx:id="but_4" mnemonicParsing="false" prefHeight="48.0" prefWidth="58.75" style="-fx-background-color: #72706d; -fx-border-color: #47423f;" styleClass="btn" stylesheets="@../styles/main.css" text="4" textFill="WHITE" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Calibri Light Italic" size="20.0" />
+               </font></Button>
+            <Button fx:id="but_5" mnemonicParsing="false" prefHeight="48.0" prefWidth="58.75" style="-fx-background-color: #72706d; -fx-border-color: #47423f;" styleClass="btn" stylesheets="@../styles/main.css" text="5" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Calibri Light Italic" size="20.0" />
+               </font></Button>
+            <Button fx:id="but_6" mnemonicParsing="false" prefHeight="48.0" prefWidth="58.75" style="-fx-background-color: #72706d; -fx-border-color: #47423f;" styleClass="btn" stylesheets="@../styles/main.css" text="6" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Calibri Light Italic" size="20.0" />
+               </font></Button>
+            <Button fx:id="but_minus" mnemonicParsing="false" prefHeight="48.0" prefWidth="58.75" style="-fx-background-color: f2a23c; -fx-border-color: #47423f;" styleClass="btn" stylesheets="@../styles/main.css" text="-" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <font>
+                  <Font name="Calibri Light Italic" size="20.0" />
+               </font></Button>
+            <Button fx:id="but_1" mnemonicParsing="false" prefHeight="48.0" prefWidth="58.75" style="-fx-background-color: #72706d; -fx-border-color: #47423f;" styleClass="btn" stylesheets="@../styles/main.css" text="1" textFill="WHITE" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Calibri Light Italic" size="20.0" />
+               </font></Button>
+            <Button fx:id="but_2" mnemonicParsing="false" prefHeight="48.0" prefWidth="58.75" style="-fx-background-color: #72706d; -fx-border-color: #47423f;" styleClass="btn" stylesheets="@../styles/main.css" text="2" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Calibri Light Italic" size="20.0" />
+               </font></Button>
+            <Button fx:id="but_0" mnemonicParsing="false" prefHeight="48.0" prefWidth="117.5" style="-fx-background-color: #72706d; -fx-border-color: #47423f;" styleClass="btn" stylesheets="@../styles/main.css" text="0" textFill="WHITE" GridPane.columnSpan="2" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Calibri Light Italic" size="20.0" />
+               </font></Button>
+            <Button fx:id="but_3" mnemonicParsing="false" prefHeight="48.0" prefWidth="58.75" style="-fx-background-color: #72706d; -fx-border-color: #47423f;" styleClass="btn" stylesheets="@../styles/main.css" text="3" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Calibri Light Italic" size="20.0" />
+               </font></Button>
+            <Button fx:id="but_comma" mnemonicParsing="false" prefHeight="48.0" prefWidth="58.75" style="-fx-background-color: #72706d; -fx-border-color: #47423f;" styleClass="btn" stylesheets="@../styles/main.css" text="," textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Calibri Light Italic" size="20.0" />
+               </font></Button>
+            <Button fx:id="but_plus" mnemonicParsing="false" prefHeight="48.0" prefWidth="58.75" style="-fx-background-color: f2a23c; -fx-border-color: #47423f;" styleClass="btn" stylesheets="@../styles/main.css" text="+" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Calibri Light Italic" size="20.0" />
+               </font></Button>
+            <Button fx:id="but_equal" mnemonicParsing="false" prefHeight="48.0" prefWidth="58.75" style="-fx-background-color: f2a23c; -fx-border-color: #47423f;" styleClass="btn" stylesheets="@../styles/main.css" text="=" textFill="WHITE" GridPane.columnIndex="3" GridPane.rowIndex="4">
+               <font>
+                  <Font name="Calibri Light Italic" size="20.0" />
+               </font></Button>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
